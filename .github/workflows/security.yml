@@ -37,6 +37,7 @@ jobs:
       - name: Trivy vulnerability scan
         uses: aquasecurity/trivy-action@v0.28.0
         with:
+          ...
           image-ref: docker-security-trivy:ci
           format: table
           exit-code: "1"
